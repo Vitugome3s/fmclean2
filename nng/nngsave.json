@@ -256,7 +256,8 @@
     },
     {
       "lean": "lemma and_or_distrib_left (P Q R : Prop) : P ∧ (Q ∨ R) ↔ (P ∧ Q) ∨ (P ∧ R) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "split,\r\nintro p,\r\ncases p with q r,\r\ncases r with j k,\r\nleft,\r\ncc,\r\nright,\r\ncc,\r\nintro h,\r\ncases h with hi hj,\r\nsplit,\r\ncc,\r\nleft,\r\ncc,\r\nsplit,\r\ncc,\r\nright,\r\ncc,\r\n\r\n"
     },
     {
       "lean": "lemma contra (P Q : Prop) : (P ∧ ¬ P) → Q :=\n",
