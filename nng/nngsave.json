@@ -206,7 +206,8 @@
     },
     {
       "lean": "lemma imp_trans (P Q R : Prop) : (P → Q) → ((Q → R) → (P → R)) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "intros p q r,\r\nhave j := p(r),\r\napply q,\r\nexact j,\r\n\r\n\r\n"
     },
     {
       "lean": "lemma contrapositive (P Q : Prop) : (P → Q) → (¬ Q → ¬ P) :=\n",
